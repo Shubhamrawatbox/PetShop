@@ -68,15 +68,21 @@ background: #ecf0f1;
 .componylogos{
 display: flex;
 flex-wrap: wrap;
-width: 85%;
+width: 80%;
 margin: auto;
 }
 .componylogos .logo{
 width: 200px;
-margin: 5rem 3rem;
+margin: 3rem 2rem;
 height: 150px;
 background: #fff;
-border: 1px solid #000;
+cursor: pointer;
+box-shadow: 1px 1px 3px 4px rgba(0, 0, 0, 0.5);
+}
+.componylogos .logo:hover{
+  background-color: #2d3436;
+  transition: all 0.5s;
+  color: #fff;
 }
 .componylogos .logo .logocontent{
 display: flex;
@@ -92,4 +98,37 @@ align-items: center;
 .logocontent .post{
     margin-top: 0.6rem;
     font-size: 1.3rem;
+    font-weight: 100;
+}
+
+/* resposive website */
+@media (max-width:1100px){
+
+  .componylogos .logo{
+    margin: 1.5rem 1rem;
+  }
+}
+@media (max-width:900px){
+  .componylogos .logo{
+    width: 160px;
+  }
+}
+@media (max-width:790px){
+  .service{
+    height: 65vh;
+  }
+}
+@media (max-width:490px){
+  .service{
+    height: 90vh;
+  }
+  .service .servicecontainer{
+    width: 95%;
+  }
+  .othercontainer p{
+    width: 100%;
+  }
+  .componylogos{
+    width: 60%;
+  }
 }
