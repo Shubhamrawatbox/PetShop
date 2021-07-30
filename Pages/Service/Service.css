@@ -1,0 +1,95 @@
+section {
+  position: relative;
+  top: 90px;
+}
+
+.service {
+  height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../Images/bg2.jpg") no-repeat center center / cover;
+  width: 100%;
+}
+.service .servicecontainer {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.service .servicecontainer .servicetitle {
+  text-align: center;
+  color: #fff;
+  text-shadow: none;
+  margin: 3rem 0;
+  letter-spacing: 1px;
+}
+.servicecontainer p {
+  color: #fff;
+  line-height: 15px;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+.servicecontainer .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  padding: 1rem 1.5rem;
+  background-color: #c0392b;
+  color: #fff;
+}
+.fa-youtube {
+  margin-right: 0.5rem;
+}
+.btn:hover {
+  background-color: #f1c40f;
+  transition: all 0.5s ease;
+}
+.othercontainer{
+width: 100%;
+height: 100%;
+background: #ecf0f1;
+}
+.othercontainer .secondtitle{
+    text-shadow: none;
+    font-weight: 400;
+    margin: 0 0;
+    padding: 2rem 0;
+}
+.othercontainer p{
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+.componylogos{
+display: flex;
+flex-wrap: wrap;
+width: 85%;
+margin: auto;
+}
+.componylogos .logo{
+width: 200px;
+margin: 5rem 3rem;
+height: 150px;
+background: #fff;
+border: 1px solid #000;
+}
+.componylogos .logo .logocontent{
+display: flex;
+flex-direction: column;
+width: 100%;
+height: 100%;
+justify-content: center;
+align-items: center;
+}
+.logocontent .fas{
+    font-size: 3rem;
+}
+.logocontent .post{
+    margin-top: 0.6rem;
+    font-size: 1.3rem;
+}

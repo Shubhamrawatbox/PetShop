@@ -1,0 +1,126 @@
+body {
+  background-color: #000;
+}
+:root {
+  --buttoncolor: #2ecc71;
+  --hovercolor: #ecf0f1;
+  --shadowcolor: #27ae60;
+}
+.conatainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  top: 90px;
+}
+.leftcontainer {
+  overflow: hidden;
+  background: #fff;
+  height: calc(100vh - 90px);
+  flex: 1;
+}
+.leftcontainer .leftimages {
+  width: 90%;
+  height: 100%;
+  background: url("../../Images/12.png");
+  background-position: center;
+  background-size: cover;
+}
+.rightcontainer {
+  flex: 1;
+  position: relative;
+  background: linear-gradient(#eb01a5, #d13531);
+}
+.box {
+  max-width: 65rem;
+  position: absolute;
+  background: linear-gradient(#eb01a5, #d13531);
+  height: 300px;
+  left: -30%;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+.contents {
+  width: 80%;
+  margin: 8rem 6rem;
+}
+.contents h2 {
+  color: #000;
+  font-size: 2.3rem;
+  margin: 2rem 0;
+  font-weight: 700;
+}
+h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: var(--buttoncolor);
+}
+.contents p {
+  color: #fff;
+  line-height: 15px;
+  margin-bottom: 2rem;
+}
+.btn {
+  text-decoration: none;
+  box-shadow: 3px 3px 10px 5px var(--shadowcolor);
+  font-size: 1.7rem;
+  padding: 1rem 2.4rem;
+  background-color: var(--buttoncolor);
+  display: inline-block;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--hovercolor);
+  transition: all 1s;
+  box-shadow: none;
+}
+.btn:hover a {
+  color: var(--hovercolor);
+}
+.btn a {
+  color: #fff;
+}
+@media (max-width:950px){
+  .leftcontainer .leftimages{
+    background-position:top;
+  }
+  .box{
+    width: 45rem;
+    left: -20%;
+  }
+}
+@media (max-width:800px){
+  .box{
+    width: 40rem;
+    height: 600px;
+    left: -10%;
+  }
+}
+@media (max-width:700px){
+  .leftcontainer{
+    flex: 0;
+  }
+  .rightcontainer{
+    flex: 1;
+  }
+  .box{
+    width: 40rem;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+@media (max-width:400px){
+  .box{
+    width: 25rem;
+  }
+  .contents{
+    width: 90%;
+    margin: 1rem;
+  }
+}
