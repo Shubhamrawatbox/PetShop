@@ -1,0 +1,143 @@
+.contactcontainer {
+  width: 100%;
+  display: flex;
+  height: calc(100vh - 90px);
+}
+.contactcontainer .serviceleft {
+  flex: 5;
+  position: relative;
+}
+.serviceleft .servicecontent {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45%;
+  left: 10%;
+}
+.serviceleft .servicecontent h4 {
+  font-size: 3.5rem;
+  margin: 2rem 0;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.servicecontent p {
+  font-size: 1.3rem;
+  margin: 1.6rem 0;
+  font-weight: 300;
+}
+form {
+  margin-top: 3rem;
+}
+textarea {
+  resize: none;
+}
+.form-control {
+  display: block;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #b2bec3;
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  background: transparent;
+}
+.form-control:focus {
+  border-bottom: 1px solid #f1c40f;
+}
+.submit-btn {
+  background: transparent;
+  outline: none;
+  margin-top: 2rem;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #f1c40f;
+  color: #000;
+  transition: all 0.5s;
+}
+.contactcontainer .serviceright {
+  flex: 1;
+  background-color: #f1c40f;
+  position: relative;
+  z-index: -11;
+}
+.contactcontainer .servicebox {
+  position: absolute;
+  width: 55rem;
+  height: 40rem;
+  background-color: #000;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+}
+.servicebox .iconbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: yellow;
+  font-size: 3.5rem;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+
+
+span {
+  color: #fff;
+  font-size: 1.3rem;
+  margin: 0.5rem;
+  font-weight: 300;
+}
+.serviceright .socialicons {
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  justify-content: space-around;
+}
+.fab {
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 1040px) {
+  .serviceleft .servicecontent {
+    left: 3%;
+  }
+  .contactcontainer .servicebox {
+    width: 45rem;
+    height: 40rem;
+  }
+}
+@media (max-width: 830px) {
+  .contactcontainer .servicebox {
+    width: 35rem;
+    height: 40rem;
+  }
+}
+@media (max-width:600px){
+  .contactcontainer .servicebox{
+    display: none;
+  }
+  .contactcontainer .serviceleft {
+    flex: 1;
+  }
+  .contactcontainer .serviceright{
+    flex: 0;
+  }
+  .serviceleft .servicecontent{
+    width: 80%;
+  }
+  .serviceright .socialicons {
+    display: none;
+  }
+
+}
