@@ -1,6 +1,6 @@
-body {
-  /* background-color: #000; */
-}
+/* body {
+  background-color: #000;
+} */
 :root {
   --buttoncolor: #2ecc71;
   --hovercolor: #ecf0f1;
@@ -75,6 +75,7 @@ h2::after {
   background-color: var(--buttoncolor);
   display: inline-block;
   cursor: pointer;
+  outline: none;
 }
 .btn:hover {
   background-color: transparent;

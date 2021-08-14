@@ -129,6 +129,7 @@ span {
   }
   .contactcontainer .serviceleft {
     flex: 1;
+    background-color: #81ecec;
   }
   .contactcontainer .serviceright{
     flex: 0;
