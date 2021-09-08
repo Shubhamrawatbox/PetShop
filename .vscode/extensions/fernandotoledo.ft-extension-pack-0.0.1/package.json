@@ -1,0 +1,28 @@
+{
+	"name": "ft-extension-pack",
+	"publisher": "FernandoToledo",
+	"displayName": "Extension pack",
+	"description": "Extensions pack with Githistory, Chrome Debugger, Material icons, Prettier and TSlint extensions",
+	"version": "0.0.1",
+	"icon": "icons/ft-pack.png",
+	"engines": {
+		"vscode": "^1.41.0"
+	},
+	"categories": [
+		"Extension Packs"
+	],
+	"extensionPack": [
+		"donjayamanne.githistory",
+		"eamodio.gitlens",
+		"msjsdiag.debugger-for-chrome",
+		"PKief.material-icon-theme",
+		"esbenp.prettier-vscode",
+		"ms-vscode.vscode-typescript-tslint-plugin"
+	],
+	"__metadata": {
+		"id": "f7b92b60-6a15-4e0b-bb0c-4fcfe44b6276",
+		"publisherId": "7b3150f2-a68e-4072-84dd-03edc9d37cea",
+		"publisherDisplayName": "Fernando Toledo",
+		"installedTimestamp": 1625404373191
+	}
+}
